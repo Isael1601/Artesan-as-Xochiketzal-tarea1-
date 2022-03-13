@@ -874,6 +874,12 @@ main {
     background-color: rgb(238, 238, 238);
     }
 
+    .hero-image {
+        background-image: url('assetes/artesania6.png');
+        height: 600px;
+        width: 100%;
+    }
+
     header a {
         margin: 0% auto;
         color: #fff;
