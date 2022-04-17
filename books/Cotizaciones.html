@@ -5,7 +5,6 @@
         <meta charset="utf8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/0ee1b1b63b.js" crossorigin="anonymous"></script>
         <title>Cotizaciones</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
@@ -41,13 +40,18 @@
                     </div>
                 
                     <div class="form">
-                        <input type="text" placeholder="Nombre" class="formulario-input">
-                        <input type="text" placeholder="Apellido" class="formulario-input">
-                        <input type="tel" placeholder="WhatsApp" class="formulario-input">
-                        <input type="mail" placeholder="ejemplo@dominio.com" class="formulario-input">
-                        <textarea placeholder="Describe brevemente tu pedido especial max. 450 caracteres" maxlength="450" class="textarea-fromulario"></textarea>
-                        <input type="submit" value="Enviar cotización" class="botones-formulario">
-                         <input type="reset" value="Borrar" class="botones-formulario">
+                        <input type="text" placeholder="Nombre" class="formulario-input" id="nombre">
+                        <input type="text" placeholder="Apellido" class="formulario-input" id="apellido">
+                        <input type="tel" placeholder="WhatsApp" class="formulario-input" id="numero">
+                        <input type="mail" placeholder="ejemplo@dominio.com" class="formulario-input" id="mail">
+                        <textarea placeholder="Describe brevemente tu pedido especial max. 450 caracteres" maxlength="450" class="textarea-fromulario" id="pedido"></textarea>
+                        <input type="button"  value="Enviar cotización" class="botones-formulario" id="enviar">
+                         <input type="reset" value="Borrar" class="botones-formulario" id="reset">
+                    </div>
+                    <div>
+                        <ul id="cotizaciones">
+
+                        </ul>
                     </div>
                 </div>
 
@@ -84,6 +88,6 @@
             </section>
         </footer>
 
-
+        <script src="./Cotizaciones.js" type="text/javascript"></script>
     </body>
 </html>

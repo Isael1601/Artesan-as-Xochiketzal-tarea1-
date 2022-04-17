@@ -1,7 +1,5 @@
 console.log('Artesanias Xochiketzal')
 
-const inputNombre = document.getElementById('nombre')
-
 const inputComentario = document.getElementById('comentario')
 
 const btnAgregar = document.querySelector('#botones')
@@ -9,8 +7,8 @@ const btnAgregar = document.querySelector('#botones')
 let arr = [];
 
 btnAgregar.addEventListener('click', () => {
-    arr.push(inputNombre.value, inputComentario.value)
-    inputNombre.innerHTML = ''
+    arr.push(inputComentario.value)
+    inputComentario.innerHTML = ''
     console.log(arr)
     localStorage.setItem('comentario', arr)
     agregarComentario()
@@ -18,7 +16,7 @@ btnAgregar.addEventListener('click', () => {
 
 function agregarComentario() {
     const lista = document.getElementById('comentarios-emitidos')
-    arr.forEach( function (item, i) {
+    arr.forEach( function (item, i) { 
             lista.innerHTML += `
             <li>
                 ${item}
